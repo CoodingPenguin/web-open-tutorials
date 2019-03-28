@@ -20,9 +20,9 @@
     - `<head>`와 `<body>`를 포함한다.
 
 ### - 본문과 관련된 tag
-  -  `<body></body>`
+  - `<body></body>`
     - 본문과 관련된 부분을 묶는데 사용된다.
-  -  `<strong></strong>`
+  - `<strong></strong>`
     - 글자를 강조한다.
   - `<u></u>`
     - 글자에 밑줄을 긋는다.
