@@ -16,8 +16,8 @@
 
 ## 2) tag의 종류
 ### - 가장 최상위 tag
-      - `<html></html>`
-        - `<head>`와 `<body>`를 포함한다.
+- `<html></html>`
+  - `<head>`와 `<body>`를 포함한다.
 
 ### - 본문과 관련된 tag
       -  `<body></body>`
