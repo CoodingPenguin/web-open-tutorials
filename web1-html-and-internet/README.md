@@ -43,7 +43,7 @@
     - 목차를 만든다.
     - `<ul></ul>`과 `<ol></ol>`은 `<li></li>`의 부모 tag이고, 서로 부모-자식 관계를 갖는다. 즉, 떨어질 수 없다.
     - `<li></li>`가 만든 목차의 경계를 짓기 위한, 그룹핑을 하기 위한 tag이다.
-    - `<ul></ul>`은 Unordered List, <ol></ol>은 Ordered List이다.
+    - `<ul></ul>`은 Unordered List, `<ol></ol>`은 Ordered List이다.
   - `<table></table>와 <tr></tr>와 <td></td>와 <th></th>`
       - `<table></table>`은 HTML 표를 만든다.
       - `<tr></tr>`은 표의 행을 말한다.
@@ -52,11 +52,11 @@
           - `<td>`는 평범체에 왼쪽 정렬을 한다.
       - 위의 3개(혹은 4개)의 tag들은 부모-자식 관계이기에 항상 붙어다닌다.
   - `<a href = "주소" target="_blank" title="html5 specification"></a>`
-    - a는 anchor를 뜻한다. 정보의 바다인 곳에 닻을 내린다고 생각하면 된다.
-    - <a></a>만 써주면 안되고 어디 링크로 연결할 것인지 써줘야 한다.
-    - href(hypertext reference)로 ""에 주소를 적어주면 된다.
-    - target에 새 창으로 열어주고 싶우면 위와 같이 해주면 된다.
-    - title에 링크 전 마우스를 가져다 댔을 때의 설명(tooltip)을 추가할 수 있다.
+    - `a`는 anchor를 뜻한다. 정보의 바다인 곳에 닻을 내린다고 생각하면 된다.
+    - `<a></a>`만 써주면 안되고 어디 링크로 연결할 것인지 써줘야 한다.
+    - `href(hypertext reference)`로 ""에 주소를 적어주면 된다.
+    - `target`에 새 창으로 열어주고 싶우면 위와 같이 해주면 된다.
+    - `title`에 링크 전 마우스를 가져다 댔을 때의 설명(tooltip)을 추가할 수 있다.
 
 ### - 본문을 설명하는 tag
   - `<head></head>`
