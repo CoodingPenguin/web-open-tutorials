@@ -33,39 +33,39 @@
 
 ## 2.2. CSS 속성(property)
 ### 2.2.1. 속성의 종류
-#### 2.2.1.1. `color`
+#### `color`
   - 색상값이 저장되어 있는 미리 정의된 상수(ex. red, black)
   - #16진수 색상값
-#### 2.2.1.2. `text-decoration`
+#### `text-decoration`
   - none : 글자에 어떤 효과도 주지 않는다.
   - underline : 글자에 밑줄을 그어준다.
-#### 2.2.1.3. `font-size`
+#### `font-size`
   - medium : 기본적으로 지정되는 값
   - px값 : 해당 px값으로 크기가 부여된다.
   - xx-small / x-small / small / large / x-large / xx-large
-#### 2.2.1.4. `font-size`
+#### `font-size`
   - left / right / center : 왼쪽 정렬 / 오른쪽 정렬 / 가운데 정렬
 ### 2.2.2. Box Model과 관련된 속성들
-#### 2.2.2.1. `border`
+#### `border`
 border와 관련된 속성값을 나열하여 border에 속성을 부여할 수 있다. 순서는 중요하지 않다.
-##### `border-width`
-    - px : 테두리의 두께
-##### `border-color`
-    - `color`와 속성값 동일
-##### `border-style`
-    - solid : 얇은 실선
-    - dotted : 동그란 점으로 된 점선
-    - dashed : 두꺼운 실선으로 된 점선
-    - double : 굵은 실선
-#### 2.2.2.2. `display`
+#### `border-width`
+  - px : 테두리의 두께
+#### `border-color`
+  - `color`와 속성값 동일
+#### `border-style`
+  - solid : 얇은 실선
+  - dotted : 동그란 점으로 된 점선
+  - dashed : 두꺼운 실선으로 된 점선
+  - double : 굵은 실선
+#### `display`
   - inline : 자신의 contents크기만큼을 테두리로 잡는다.
   - block : 화면 전체를 테두리로 잡는다.
   - none : tag를 보이지 않게 한다.
-#### 2.2.2.3. `padding`
+#### `padding`
 border와 contents 사이의 간격 즉, border에서 안 쪽 간격을 의미한다.
-#### 2.2.2.4. `margin`
+#### `margin`
 border에서 바깥 쪽 간격을 의미한다.
-#### 2.2.2.5. `width`, `height`
+#### `width`, `height`
 contents의 너비와 높이를 의미한다.
   - px값 : px값을 받아서 원하는 크기만큼 조정할 수 있다.
   - %값 : 전체 화면에서 차지하는 비율만큼 조정할 수 있다.
