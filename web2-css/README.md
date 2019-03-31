@@ -20,6 +20,7 @@
     - 왜냐하면 CSS효과만 써두면 어떤 것에 그 효과를 적용할 건지 모르기 때문이다.
     - 속성을 부여하기로 한 tag name을 **선택자(selector)** 라고 하며, `{}`안에 있는 것들을 **선언(declaration)** 이라고 한다.
     - **선언(declaration)** 안에 `:`이전에 있는 것을 **속성(property)** 라고 하며, 이후에 속성에 부여되는 것을 **값(value)** 라고 한다.
+    - 똑같은 선언을 사용한다면 `,선택`로 구분하여 중복을 없앨 수 있다.  
 
 ### 2.1.2. `style` 속성을 이용하는 방법
   - 어떤 tag에 style속성을 부여하면 CSS 효과를 줄 수 있다.
@@ -31,18 +32,43 @@
 ----
 
 ## 2.2. CSS 속성(property)
-### 2.2.1. `color`
+### 2.2.1. 속성의 종류
+#### 2.2.1.1. `color`
   - 색상값이 저장되어 있는 미리 정의된 상수(ex. red, black)
   - #16진수 색상값
-### 2.2.2. `text-decoration`
+#### 2.2.1.2. `text-decoration`
   - none : 글자에 어떤 효과도 주지 않는다.
   - underline : 글자에 밑줄을 그어준다.
-### 2.2.3. `font-size`
+#### 2.2.1.3. `font-size`
   - medium : 기본적으로 지정되는 값
   - px값 : 해당 px값으로 크기가 부여된다.
   - xx-small / x-small / small / large / x-large / xx-large
-### 2.2.4. `font-size`
+#### 2.2.1.4. `font-size`
   - left / right / center : 왼쪽 정렬 / 오른쪽 정렬 / 가운데 정렬
+### 2.2.2. Box Model과 관련된 속성들
+#### 2.2.2.1. `border`
+border와 관련된 속성값을 나열하여 border에 속성을 부여할 수 있다. 순서는 중요하지 않다.
+##### `border-width`
+    - px : 테두리의 두께
+##### `border-color`
+    - `color`와 속성값 동일
+##### `border-style`
+    - solid : 얇은 실선
+    - dotted : 동그란 점으로 된 점선
+    - dashed : 두꺼운 실선으로 된 점선
+    - double : 굵은 실선
+#### 2.2.2.2. `display`
+  - inline : 자신의 contents크기만큼을 테두리로 잡는다.
+  - block : 화면 전체를 테두리로 잡는다.
+  - none : tag를 보이지 않게 한다.
+#### 2.2.2.3. `padding`
+border와 contents 사이의 간격 즉, border에서 안 쪽 간격을 의미한다.
+#### 2.2.2.4. `margin`
+border에서 바깥 쪽 간격을 의미한다.
+#### 2.2.2.5. `width`, `height`
+contents의 너비와 높이를 의미한다.
+  - px값 : px값을 받아서 원하는 크기만큼 조정할 수 있다.
+  - %값 : 전체 화면에서 차지하는 비율만큼 조정할 수 있다.
 
 ----
 
@@ -67,3 +93,12 @@
 ----
 
 # 3. Box Model
+## 3.1. 각각의 tag는 테두리를 가지고 있다!
+### 3.1.1. block-level element
+  - 화면 전체를 쓰는 tag들이 갖는 테두리
+  - `<h1>`과 같은 tag들이 이러한 테두리를 갖고 있다.
+### 3.1.2. inline-level element
+  - 자신의 contents 크기만큼을 쓰는 tag들이 갖는 테두리
+  - `<a></a>`와 같은 tag들이 이러한 테두리를 갖는다.
+## 3.2. Box Model의 구성
+![box_model](./img/box_model.jpg)
