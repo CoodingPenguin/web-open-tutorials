@@ -88,15 +88,18 @@
   - `<style></style>`혹은 css코드에 `.class이름`을 써줘야 class선택자로 인식한다.
 #### 2.3.1.3. `tag`
   - 우리가 아는 html tag이다.
-
 ### 2.3.2. 선택자의 우선순위
   - `id > class > tag`순이다. 만약 똑같은 형태의 선택자라면 **맨 마지막에 등장하는 선택자** 가 우선순위가 더 높다.
   - 그래서 코드를 짤 때 처음에 tag에 부여해야 하는 property를 먼저 생각하고, 점점 좁혀가면서 세세하게 꾸미면 된다.
-
 ### 2.3.3. 최대한 자세하게 하라!
   - 우리가 tag를 쓰는 데 있어서 분명 자주 쓰는 tag들은 몇 번이고 계속 쓰일 게 분명하다.
   - 근데, 속성을 부여하게 될 때 특정 `id` 혹은 `class` 안의 tag만 적용하고 싶을 떄가 있다.
   - 그런 경우, 그 `id`와 `class` 선택자를 써준 뒤 그 tag를 써주면 특정 `id`와 `class`안의 tag에만 속성을 적용할 수 있다.
+### 2.3.4. 언제 class를 쓰고, 언제 id를 쓸까?
+  - `class`는 item의 형태이다. 내가 현재 혹은 미래에 같은 스타일을 공유하는 한 개 이상의 element가 있을 경우 `class`를 쓰는 게 좋다.
+    ex. tag, comment, toolbar-button, warning-message, email
+  - `id`는 item의 고유한 이름이다. 즉, 한 번 쓰고 그 element 혼자 가질 스타일일 경우 `id`를 쓰는 게 좋다.
+    ex. main-content, header, footer, left-sidebar
 
 ----
 
@@ -117,11 +120,17 @@
 
 # 4. Grid
 ## 4.1. 관련 tag
-### `<div></div>`와 `<span></span>`
+### 4.1.1. `<div></div>`와 `<span></span>`
   - 오직 디자인 용도로 쓰기 위한 아무런 의미,정보가 없는 tag
   - `<div></div>`는 block-level element이고, `<span></span>`은 inline-level element이다.
+### 4.1.2. `<div></div>`와 `<span></span>`은 언제 쓸까?
+  - `<span></span>`은 그들 주위에 다른 elements로부터 분리되게 해준다. 그리고 줄바꿈을 하지 않는다. 주로 글자를 꾸밀 때 쓰인다.
+  - `<div></div>`는 여러 elements들을 담는 container다. 그리고 줄바꿈이 된다. 주로 레이아웃을 만들 때 쓰인다.
 ## 4.2. Grid를 쓰는 방법
-  - Grid로 만들기 위해서 하나로 묶으려는 contents들의 부모가 필요하다. 즉, 다시 `<div></div>`나 `<span></span>`으로 묶어준다.
+  - Grid로 만들기 위해서 하나로 묶으려는 contents들의 부모가 필요하다. 즉, 다시 `<div></div>`으로 묶어준다.
+    - `<span></span>`안에 `<div></div>`가 들어갈 수 없으므로, `<div></div>`로 묶어주어야 한다.
+    - 왜냐하면 `<div></div>`는 block-level element이기 때문이다.
+    - 정리하자면 block-level element가 inline-level element에 들어갈 수 없다.
   - 부모 tag의 id값을 "grid"로 설정한다.
   - 여기까지가 디자인을 하기 위한 과정이다. 큰 의미가 없다.
   - id의 declaration에 `display: grid;`를 추가한다. 여기까지 하면 아무런 변화가 없다.
