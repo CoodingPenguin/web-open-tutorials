@@ -51,5 +51,15 @@
 ## 3.3. 제어할 tag 선택하기
   - 내가 어떤 **tag** 의 **속성** 을 제어할 건지 선택을 해야 한다.
   <pre><code>
-  document.querySelector(태그).태그의속성 = "속성값";
+  document.querySelector('태그').태그의속성 = "속성값";
   </code></pre>
+  - 내가 어떤 **id** 혹은 **class** 의 **속성** 을 제어할 건지 선택을 해야 한다.
+  <pre><code>
+  document.querySelector('#id'or'.class').속성 = "속성값";
+  </code></pre>
+## 3.4. 중복의 제거를 위한 리팩터링
+  - 리팩터링(Refactoring)
+    - 코드의 가독성을 높이고, 유지보스를 편리하게 만들고, 중복된 코드를 줄이는 방향으로 코드를 개선하는 작업
+    - 중복을 끝까지 쫓아가 없애자!
+  - ```this```
+    - 자신이 속해 있는 태그를 가리키는 키워드
