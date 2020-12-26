@@ -1,15 +1,16 @@
-# 생활코딩 WEB
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://opentutorials.org/course/1">
+    <img src="logo.png" alt="Logo" width="128" height="128">
+  </a>
+  <h3 style='border: none; margin-bottom: 5px;'>Web Open Tutorials</h3>
+  <small>생활코딩 WEB 시리즈 공부</small>
+</div>
 
-생활코딩 WEB시리즈를 듣고 실습하고 했던 것들을 올리고, 배운 것들을 기록합니다.
+## 📝 목차
 
-## 0. 통계에 기반한 학습을 하자.
-  - 아무리 어렵고 좋은 걸 알고 있다 하더라도 자주 쓰이는 게 가장 중요하다.
-  - 예를 들면, 우리가 변수 선언 하는 것을 모르면 그걸 쓰이는 나머지 것을 다 할 수 없다.
-  - 태그도 마찬가지다. 태그도 자주 쓰이는 것 위주로 알면 된다.
-  - 대부분의 웹사이트도 평균 25개의 태그를 사용한다. 즉, 자주 쓰이는 것 위주로 알고 새로운 것은 구글링 하면 된다.
-
-## 1. 중복의 제거
-  - 우리는 코드를 짤 때 중복되는 부분을 최소화하도록 짜야 한다.
-  - 유지 보수를 하는 데 있어서 같은 성격의 있는 것들은 하나로 모으는 것이 좋다.
-  - 예를 들면, 코드를 짤 때 어떤 부분이 중복된다면 함수로 따로 빼두는 것이 좋은 것과 같다.
-  - 또한, 내가 아니 다른 사람이 코드를 봤을 때 가독성 또한 좋아진다.
+- [시작하기 전에](./web0)
+- [WEB1 - HTML and Internet](./web1-html-and-internet)
+- [WEB2 - CSS](./web2-css)
+- [WEB2 - JavaScript](./web2-javascript)
